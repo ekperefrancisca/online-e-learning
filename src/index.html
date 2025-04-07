@@ -1,0 +1,315 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body>
+    <header class="sticky top-0">
+        <section class="bg-black min-h-10 flex items-center gap-4 ">
+            <h1 class="ml-16 text-white  transition duration-300 hover:bg-white hover:text-black "><a href="#">For
+                    Individuals</a></h1>
+            <h1 class=" text-white  transition duration-300 hover:bg-white hover:text-black "><a href="#">For
+                    Businesses</a></h1>
+            <h1 class=" text-white  transition-all duration-300 hover:bg-white hover:text-black"><a
+                    href="/src/courses.html">For
+                    Universities</a></h1>
+            <h1 class=" text-white  transition-all duration-300 hover:bg-white hover:text-black"><a href="#">For
+                    Governments</a></h1>
+        </section>
+    </header>
+
+    <nav class="bg-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <!-- Brand Logo -->
+            <a href="#" class="text-blue-800 text-3xl md:text-5xl font-sans font-bold">coursera</a>
+
+            <!-- Mobile Menu Button -->
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+            <label for="menu-toggle" class="md:hidden cursor-pointer ml-auto">
+                <svg class="w-8 h-8 text-blue-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </label>
+
+
+            <!-- Navigation Links -->
+            <div
+                class="w-full md:w-auto hidden peer-checked:flex md:flex flex-col md:flex-row md:items-center md:space-x-6 mt-4 md:mt-0">
+
+                <!-- Search Box -->
+                <div
+                    class="flex items-center border border-solid border-blue-800 rounded-full overflow-hidden w-full md:w-96 mb-4 md:mb-0">
+                    <input type="text" class="px-4 py-2 w-full focus:outline-none" placeholder="What's on your mind?">
+                    <button class=" text-white px-4 py-2">
+                        <img src="/svg/search-line.svg" width="20px" alt="search icon">
+                    </button>
+                </div>
+
+                <!-- Courses Link -->
+                <a href="courses.html"
+                    class="bg-blue-50 border-2 border-solid border-blue-800 rounded-full text-black px-4 py-2 text-center">
+                    COURSES
+                </a>
+
+                <!-- Sign Up Dropdown -->
+                <div class="relative mt-4 md:mt-0">
+                    <!-- Hidden Checkbox -->
+                    <input type="checkbox" id="signup-toggle" class="hidden peer">
+
+                    <!-- Sign Up Button -->
+                    <label for="signup-toggle"
+                        class="bg-blue-800 text-white px-4 py-2 rounded-lg cursor-pointer peer-checked:bg-blue-600">
+                        Sign Up
+                    </label>
+
+                    <!-- Dropdown Menu -->
+                    <div
+                        class="hidden peer-checked:flex absolute right-0 top-full mt-2 bg-white shadow-md rounded-lg w-80 p-6 flex-col z-50">
+                        <h2 class="text-2xl font-bold mb-4 text-center">Sign Up</h2>
+                        <form>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="name">Full Name</label>
+                                <input type="text" id="name"
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="email">Email</label>
+                                <input type="email" id="email"
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="password">Password</label>
+                                <input type="password" id="password"
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    placeholder="Enter your password" required>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-blue-800 text-white py-2 rounded-lg hover:bg-blue-600 transition">
+                                Sign Up
+                            </button>
+                        </form>
+                        <p class="mt-4 text-center text-gray-600">Already have an account? <a href="#"
+                                class="text-blue-500 hover:underline">Log in</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 ">
+
+            <!-- First Column -->
+            <div class="flex flex-col items-center text-center md:text-left bg-sky-50 font-sans">
+                <h6 class="text-blue-800 text-4xl pt-5 font-sans font-bold">coursera <span
+                        class="bg-blue-800 text-white px-3 text-lg">PLUS</span></h6>
+                <h2 class="text-5xl ml-16 leading-tight font-medium mt-4">Achieve your career goals with Coursera Plus
+                </h2>
+                <p class="text-gray-600 mb-4 ml-16">Subscribe to build job-ready skills from world-class institutions.
+                    $59/month, cancel anytime.</p>
+
+                <div class="relative group">
+                    <!-- Menu Button -->
+                    <button class="mt-12 bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-400">
+                        Start 7-day Free Trial
+                    </button>
+
+                    <!-- Dropdown Menu -->
+                    <div
+                        class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Web Development</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Data Science</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Graphic Design</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Cyber Security</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Language Learning</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Cyber Security</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Cyber Security</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Cyber Security</a>
+                    </div>
+                    <h1 class="text-blue-800 mt-2 font-semibold font-sans "><a href="#">or $399/year with 14-day
+                            money-back guarantee</a></h1>
+                </div>
+            </div>
+
+            <!-- Second Column -->
+            <div class="flex flex-col items-center text-center md:text-left">
+                <img class="" src="https://universiat.com/wp-content/uploads/2024/10/IMG_3922-1024x661.png" alt="">
+
+            </div>
+
+        </div>
+    </div>
+    <section class="w-full bg-white py-10 px-4 md:px-10">
+        <!-- Heading -->
+        <h1 class="text-2xl md:text-3xl font-medium mb-8 text-left">
+            Learn from 350+ top universities and companies
+        </h1>
+
+        <!-- Logo Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 items-center justify-items-center">
+            <div class="w-24 sm:w-28 md:w-36">
+                <img src="https://lh4.googleusercontent.com/XK2xoHvsOKxnO8SJoQf1Wr8a-LqdVZ0NOZytVqCvqCyrQQdXtvygV3FV8x75jtMuma739OQke7ZkIW46AU8UesMWrzguEqzxX3vPbCSHfBxLASoy3I2B2dIoEJHAu96ptFmTqo60"
+                    alt="University 1">
+            </div>
+            <div class="w-24 sm:w-28 md:w-32">
+                <img src="https://cayuse.com/wp-content/uploads/2021/05/Duke-University-logo.png" alt="Duke University">
+            </div>
+            <div class="w-24 sm:w-28 md:w-32">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ355NeJ9c6a92yoWcqIxiVvYvCrwg_CBS5UBlTXQE3fdeSyU1h"
+                    alt="University 3">
+            </div>
+            <div class="w-20 sm:w-24 md:w-28">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQz9n7qb1XVjZKLuX4hJCmf2hgEj4IF7LBISqOjlk9FqBqO751m"
+                    alt="University 4">
+            </div>
+            <div class="w-24 sm:w-28 md:w-32">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrYFsYI-s_apBAtRfLNEsSHANF7_MhaPJKizg34vhtDlwHXmOd"
+                    alt="University 5">
+            </div>
+            <div class="w-28 sm:w-32 md:w-40">
+                <img src="https://media.licdn.com/dms/image/v2/D5616AQHEJsE1HkoAyw/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1734750286080?e=2147483647&v=beta&t=9JWLKthVQ4y8NqzTUYD_36nhlo_VKkeQzIku_hk0o84"
+                    alt="University 6">
+            </div>
+        </div>
+
+        <!-- Description -->
+        <div class="mt-10">
+            <p class="text-blue-800 text-base md:text-lg font-sans font-bold leading-relaxed">
+                Coursera partners with more than 350 leading universities and companies to bring flexible, affordable,
+                job-relevant online learning to individuals and organizations worldwide. We offer a range of learning
+                opportunities—from hands-on projects and courses to job-ready certificates and degree programs.
+            </p>
+        </div>
+    </section>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 lg:h-96">
+        <!-- Text Section -->
+        <div class="flex flex-col justify-center">
+            <h1 class="text-xl md:text-2xl font-sans font-bold mt-4 md:mt-20 ml-4 md:ml-8">
+                77% of learners report career benefits, like landing a new job, earning a promotion, gaining applicable
+                skills, and more.¹
+            </h1>
+            <a href="/src/lesson.html"
+                class="ml-4 md:ml-8 mt-6 inline-block bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-400 transition duration-300">
+                LEARN MORE
+            </a>
+        </div>
+
+        <!-- Local Image -->
+        <div class="flex justify-center items-center">
+            <img src="/images/study lesson.jpg" alt="" class="rounded-full w-60 h-60 object-cover" />
+        </div>
+
+        <!-- Online Image -->
+        <div class="flex justify-center items-center">
+            <img src="https://media.istockphoto.com/id/1496195459/photo/young-graduates-throwing-their-mortarboard-in-the-air-while-celebrating-on-graduation.jpg?s=612x612&w=0&k=20&c=-GwKMY9ovlH_Y2SjnWqqUSUhEq1pDcWk2IF0ti5_odc="
+                alt="" class="rounded w-full h-auto max-h-80 object-cover" />
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <section class="bg-gray-100 w-full h-96 text-gray-900">
+        <div class="grid grid-cols-5 gap-4 ">
+            <div class="ml-5">
+                <h1 class="pt-2 font-bold text-lg">Cousera</h1>
+                <p class="text-xs py-2"><a href="#">About</a></p>
+                <p class="text-xs"><a href="#">What we Offer</a></p>
+                <p class="text-xs py-2"><a href="#">Leadership</a></p>
+                <p class="text-xs"><a href="#">Career</a></p>
+                <p class="text-xs py-2"><a href="#">Catalog</a></p>
+                <p class="text-xs"><a href="#">Cousera Plus</a></p>
+                <p class="text-xs py-2"><a href="#">Professional Certificates</a></p>
+                <p class="text-xs"><a href="#">Master Track certificates</a></p>
+                <p class="text-xs py-2"><a href="#">Degrees</a></p>
+                <p class="text-xs"><a href="#">For Enterprises</a></p>
+                <p class="text-xs"><a href="#">For Goverments</a></p>
+                <p class="text-xs"><a href="#">For Campus</a></p>
+                <p class="text-xs"><a href="#">Become a Partner</a></p>
+                <p class="text-xs"><a href="#">Social Impact</a></p>
+                <p class="text-xs"><a href="#">Free Courses</a></p>
+                <p class="text-xs"><a href="#">ECTS Credit Recommendations</a></p>
+            </div>
+            <div class="">
+                <h1 class="pt-5 font-bold text-lg">Technical Skills</h1>
+                <p class="text-xs py-2"><a href="">ChatCGT</a></p>
+                <p class="text-xs "><a href="#">Coding</a></p>
+                <p class="text-xs py-2"><a href="#">Computer Science</a></p>
+                <p class="text-xs"><a href="#">Cybersecurity</a></p>
+                <p class="text-xs py-2"><a href="#">Devops</a></p>
+                <p class="text-xs"><a href="#">Ethical Hacking</a></p>
+                <p class="text-xs py-2"><a href="#">Generative AI</a></p>
+                <p class="text-xs"><a href="#">Java Programming</a></p>
+                <p class="text-xs py-2"><a href="#">Python</a></p>
+                <p class="text-xs"><a href="#">Web development</a></p>
+                <div class=""><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALYAAABJCAYAAACQNNzIAAAAAXNSR0IArs4c6QAAF31JREFUeF7t3QW0bVXVB/CFdIOEIF3SKALSHZLSHQqKNCJId3dIK6DS3d3SKN2NClLS6KPjG7/1Md9Yb3vuPefcdy7v3eNeY9xxzj1n7xVz/edc/xn73hEGDRr0VapbLYEuk8AINbC7bEfr5WQJ1MCugdCVEqiB3ZXbWi+qBnaNga6UQA3srtzWelE1sGsMdKUEamB35bbWi6qBXWOgKyVQA7srt7VeVA3sGgNdKYEa2F25rfWiamDXGOhKCdTA7sptrRdVA7vGQFdKoAZ2V25rvaga2DUGulICNbC7clvrRXUU2F999VX64IMP0nPPPZfeeOONNMIII6Qvv/wyffHFF8l3Wrx2SvTG0Kqvner/m+qn03L5puY9tOPEvkU/sOJn2mmnTTPOOGMaeeSR0yijjNL2MB0DNgC//PLL6eabb0433nhjeuCBBzK4fT7SSCPlyXrfUxvaja0KqG1JNLlhaOfXbD79Pf9m4w/r70O+QDzGGGOkBRZYIK2//vpp/vnnT9/5znfanl7HgP2f//wnXXnllemQQw5JL774YrbMfmxYf4KiCoj+Akh/rqE8cdrewS64oTzNRxxxxMHYmWmmmdLuu++ell566TTWWGO1tdKOAZuF3n///dMdd9yRLbOfAHYzClKCpq8A6ut9Ia1mCjG0/be1K324uL/n39/9x5IBOxSdzNdee+202WabpbnnnrstqXQM2Ndee23aaqut0jvvvNMrl24EkE4Au5ngm0mlN+B+kydPX9fRTPH62m/Irb/7ZwjN8Vvf+tbgV2Pj2ocffnhaYoklmm3hEN93DNhXXXVVWmeddQZ3bpKNhNlfwG5r1fXFw6UEAjMldiaYYIJ02GGHpTXWWKOtOXcM2Jdffnkm+1W+WAV3fwG7lXHakkx98TcugRLQYb3HHHPMdOyxx6bVV1+9rfl0DNiXXnpp2njjjXP0Izh11WqHQ9nbDJsdeTiYMfS9/PLLp1/+8pf5+PrJT34yRLfN+qnOQX9TTDFFmnLKKXN/f/vb39Jrr72WPv/888HHY09K2ehkinmWfDHG1L/m+J1sssnSvvvumzbZZJM8Tm+Ro1Z2dr/99ktXX311+utf/9rK5UP4QY1uKP2k8ntrXnfddfNH55xzzuCverq+pcl8fVHghjxESE499dS81+20jgH7kksuGQLYpeVuBrJm3wdwXCd06PdTTjklC1Z4CA2qArsqhGZjEOJDDz2Ugfzss8+meeedN7355pt5DCDv6f6YW4A1lG7UUUfN8zS/jz/+OCujvqOFkzTNNNOkJ598MjlyP/roo3xNO3w4ro1XTvxvf/vb9Kc//aklHPQWtYrvAqzf//73s/I9+OCDeR+OOuqo/PvWW289eKye+quuqRlNje9FQ04++eS08sort7SeuKijwP7Zz3422GKX1roZqJp9X13RGWeckTbccMPBH++5557pwAMP7HXhrYzx1FNPpQMOOCCde+65eeNOO+20DPDvfe97g/vmzEw99dTprrvuSp999lkG/I9+9KP09NNPp/fffz9f+9JLL6VPP/00x19tjPi+e3w+11xz5fg+5dFmmGGG9Nhjj6Wxxx47g1p/3/72t/O49913X3rrrbfydeYz1VRTJSEw90qChYUfZ5xx0hxzzJH++c9/pgsvvDAdd9xx6cwzzxwCbPaDcpmrZkyKRPEo1+uvv55PLGvSv3no3495OVn+8Ic/5HGPOeaYvCZOHYsqxDvRRBOlJ554In3yySf5emNNN910+XMGw+elsRsMwK8TbH4vT/QS2L/73e+GH2DHIkoNbgVczdRSTPOGG27IlxGgzZllllnSq6++OsStMVZpdZr1DUhAcf755+eNANJnnnkmTT755OmVV17JlnDhhRdOjz/+eFp88cXTCiuskB599NGcjDr66KPTxRdfnB5++OH8uttuu2VKcP3112eOCEgiRoMGDcp9/PznP0+XXXZZBj+wGAOIt9hii7TTTjule+65J48h1HXFFVdkBWAhXbvBBhukH//4xxkwE088cVayf/3rXxmEs88+e76npAfWDWDXXXddBqR7KNd6662XPvzww/TnP/85vzplJER22GGHdNJJJ2VxhfJYK8vpFJOA23nnndMJJ5yQllxyyfT888/n+4xp7vbF62qrrZblwdIvuOCCub8Ab/ka+9II2Dj273//++4FdjgTaMeiiy6aRhtttGwVNt1008SCl0AOAYZytcLtXctiH3TQQdnaEShrBow2RQLqlltuyZsE5Kw5a7XRRhulvfbaK40//vjZkp133nl5n9zDQi+yyCLZArLoF1xwQdp7770z6FnOVVddNYezfD/66KNnfq0kgbV+5JFHMsDWWmut3AdFMyf3+Rw9Aq7tttsug5wS6ANwt9lmm/8CtjEXW2yxnOxwHevOJ6I0cg/WZm76My/hNfKN8Jv3TgMysl6NEZh55pnTUkstlfumOPblu9/9bu6fxaZwstGs+zXXXJNPsp4M3P8ksAkYL/3HP/6RJp100mxhWDdgaSSsRlGSZieGjCkA2EAbyRrddNNNacIJJ8yA2GOPPdJss82WOTDwoEPzzDNPmm+++dLZZ5+dLTplYI3xziOOOCJTD4AFbAks17Go7mW5nQq+Q1kc904I1OLf//53WnbZZTMtmmSSSTLVuOiiizJ4fvCDH+RTwziU8IUXXsjAcRqgA4ceeugQVAQIAdh1gIvW6MePk+bWW2/N47CMfBXzNEbwfetlzVlkFpiDSpYstrVRNHUdTi/K59S47bbb0t133539CzTryCOPzOOVe9XbHsV3XW+x47gS02QNWGmcFtirWc6SywWYW7HaAMZi22TKwyqLjPAdAOvee+/N4Hv77bezZTY+kAIK6wxsW265Zdp8880zdeAU6g9IWTqAAE73sIrLLLNMHsdRDswKflg4CmUsvsNyyy2X6ybwTCD51a9+ldeOgulHREU/LCYA/f3vf8/jU6CyNbPYnHH9ykVQ4AB22YcAgXVSDgoMrORvzayzdQCiH+uYddZZM3UqFaSkHVVq2LUWm5YSkM1ztLJUqMCdd96Z/vjHP6b7778/H8njjjtu5ofAsdBCC2Vr4jpcl4ODI0eUosrreuLZxsZZbRjQOE4B3PEMmD4HtDXXXDNbVQBHEyJiwpoBMxoBjCgTa25ONgy1AATgEaIEvh/+8Ic5vOgUAganECsMWKwfQLPa+sCrcVy0gROJs0s3czTxcXLxQ8ldV42KiLqo5WHVydVawwHXJ8vPYstFsNisrmvL5oS0Bkr261//Or9SRmuxbxQZzeGA+owCUATKi4PHHMs+S6vdVcCOeK+NJSxWLRw+mk5w0QCAg8V6BjUJYbhWX34crahD1SnpjYq4b7zxxsugESF47733MtCiMjHGEzkILhsbb2xOIFCx5q4VBWHBogGwPnFofbqew0thKIm1RTgTdzcO7h3RBH1SNrJhuf1OFiiT+eC6gAVErKW5l+t3H1lSPnNwr3kDIaB77zNjUwJcXQsDEXIWlbFGTqQ1oBZxcnJQjR0VneZlzq73U/o+vfHs8sQdrqlIdUHVuDShohiOfHyWYIJilJa3J2tbComg3RtRhRi7p8RHGQeOeG1JX2JzgcLn+i+b+TXj7j3Nu/w8xm62RkoR8fCIWJRhubi/agljHRSJsoQSRQKqJ6rWqJ/e1tNbXLwEbKM+GsmR7zHcRkVKYJdWJN6vuOKKmULQeI2wbWBfGgvEkvLUOTqtArsERCNgR3RA/yWQIl7fCXD3tt7ovwR2M4BVv48+KL55lwmjvsi6k/f0pBDDPbB7AjeQiKPiymEd4qmboCGRzWvFerNG+DmLHdm9SPM32ohGGbEqsMPa6Q+wg/Kw3sMTsEtwlCdRyL4Ets96k0snQTs0fQ0oYIfFI3ycFpeMx8fiaA9QtioUygBoIhk77rhjdgA7CewAd4DHa9CbZjSi1TW0YrF7qycJax6nS/UUCYpXGoqIVRt7aOtUOrHOah8DCthh5UQz1HDj19FYxLDUBN2KlY4Nca24sYhCbJjNbWXDqpY7kg4SDjKSwnuuCY7qPSCZr1a9v9ObHCANYM8555w5giEd7jPOp3CjiJBkUqmAMZcS2D6Lp1WqFr3Tcx+a/gYEsEs6EhulzkD61e8liAOMsRmtAEfUQYRBRMD1Yf37AmwhsEgDS2xI2wNxgHlYAZvSS8YwCJpTSiQjmnAhf6XqFJfgKilLKEp/+wh9BfeAAXYV3Mcff/zgTYrFx9Eezk04O82Ew2mU6Ij7bWBfeKRaCllIoGGhhZxkHIXTqnNsNqdOfR/AE3sW0ycTWdezzjorO4Est9j+KquskqMeYu+ukRPwmcQQWZenYBl9qoHdw07JSpXVfXE892RpI7wkpSs9XfLheB/Cbmatoy8bLF6swCesfyvWOuaqH7FXtdHqIDzupqkF3meffQankqsePCveKuVpF+glf/deooeSmZsiozL8WJUT646WeJXiV9gUwA6Zlc7v8AjuAWWxS87H0VMqGn87onRmmgG6BElsCuWS3Yt7W92sACtO7WkgHFsNhBNA2lpqOMpXy75lDyMTKCGDssiIisfLGLKUUcZpLmiDegy0SR2K/qXEZfpkT2UspcVZ3er63S/jaAzW9ze/+U2mR0G7Qon9LonFiuPcgC1LqNJQ2l1GNUpkyVByR93K9NNPn5M3xlC4hNKVhkHW1T55qMQpJhuqMU4a2fleckyxFqVSu0IJOfN9aQMW2KrIlEFWM1ylJWkH4BxHTzSHU9eqMAPYsm5S5l5ZRg4ugAICh03NR9Sm6FuKefvtt8/WEBAc/SV1ksFT+0ExjAFs0tnAJizppEN9zNdY6BRF0q+TwI9Mo3udJpzYlVZaKSuBqj/AqcrH79Li6kMi7h4+DLBRRIql71133TVX60VEJTi7hwkYCf0HuGUYzQFw0SFrIZt4gtzr6aefnguiShpJ4clARrfVEzT2bUACm7CVe6onoO1BQcooRyt0JIDmfsAQ8gOwdhowuB8fVd0H3KyejXb8ew8AAFNabJTlF7/4RR7XWlhDJaCiM4qUAEvEQt2Iazi31hslqoqswtlTgstq6t8zfkCvsYIhByeEqjmGAFA8NgVkalaiuZ/F5PwqwgorK7rjO595dSJx3q1bRaCyUvPzvZIAKXaFTNLkgO93dTrk4XNK7hE062cIfB4PJDhRjKvCUY5CmUO7T5pbz4AFtg0jHHXOrBiBtwvskt9GDNeRDlitWgnjRmkmKqGo31EfQECZHNEAWh7jalt8RzG9x8UDhIqUFEeZE9BSONlVPoAGjAAIMEAANKw5cDh5yMT4jn1KEScB6oJioDW+Nx8PM5hv6S8Yl4U2N1EU40ftibHUlesbkJ0SobBqxMNRBkzr08wbgM0DDSkrCCm9PpTHlo9xqXlh9VEg67GudtqABLYFArGqsRNPPHEIx8Z3cXy2kgAp+WVsrgo3jmCrPJtVevfdd/NmO+ZVFWooiMpCQMFvWaqgLo5yFYDGUGnHQkeyCQBspHtYX1YY91b8RIk9KCB0VyqzQjBgQmvcB3zW5poINVJAPywuGhR/JcmRj79Hwsv46IP1ADYZRyMXVhW1AD5FTVErTWGcWihHUDv3KRdWZOUJJmUQZcTJ2Cr89BsnjX7M3fVOPIZG3Uc7bUADm7BotaM8WljhSCI049mx+aXQ8DpHYKvN408sPXDGM4E2HqA4d3F8h7NkjkDtz3A5GURktPAXXK9UVBkrLqqkVUVclLp6UJiFKwGiTNVnLCuHLupd9Gke1SIsCsKixjOfxosHm8mOorKWVWAffPDBWSmCHpXOnbGscdttt80KRjE0lMoaKSOFLufdzHj4Ho0jr3bagAW2BbM+jjJHaVmm2gq/LhWhFJjnABXftxrHBgKOD88/KFGjDWDFOX1RPG+zAJuT2BuwzQfXRDNYPs2RjdcGfQJaVlL0QisL9f0eFjsSTyGfeGJc2NRnwACQ1sTJFHmpAhvVcj0nUtlqVU6AzcKiMgwPw8E3UIaKbqEvjYB9++23Z+uP/ujba5y+oinVZzGbgXxAALsnrQ6Pn+DURDeKkPQkgJ7Cep4AYXVDqM0ESLlwSK9S/JxCmxkpdM8HilSIUHAMcVDzZIE8GACUvVERSuMBA+szDlD4neMYTX/GEZozNj4LoAGgUACKF7Ux7jVHll6YkowBEbjIBrBZbHHskoqw1lHK4KRkucuIBcsvfi+aIxyoUUhUirXnT5TXSwix7Jx2siurEMNHAHLya6cN18Du7Zgqv3OE0up2gN1ISMBG+GFVmx2T+gCMSMhwckIpon9gkY1EUzxJ4/lGwGG9AtieqPFkesSVWWTZQc0jV2LaQAR0+mH9RQpi43FSkQuREYpDgSKRog/92mjrKh1Y3wk3ik5QGk+8a4CnHEB4r6QB+hGSQ/8oDacvqAylwbndh55QZut1D75P2VjreO4x5CMDqnbFI23W1Ne4dXU/BwSwWwEY/uaxouB1pWMVm1u+xgZ6pRDir8JcEfttZUz3epzK0eu5R05btenHpuHJACkyYYygIq4HWBuOF+PkAAMIHCsxXlYtnjJxPXACvnAdq7vLLrvkqAtwiVV7+DUcZ3Lwo29WnEXlxLKgkkkiOdZPoVGjcG75GCiZyAslZHUpMJqCbvz0pz/NCsBp9ecghPnIgsOMXpmPdbneiWo8iiw8WDbXq6+xb8KRHNN4goii8lXK06lVqz2ggR2bFuleR5kHRKOxKjZTjbWNcZx7HpAjFsC3qarb/GkGx29sbKsC5GQRos0WrWgEbA4Ta8XasoJi0LKmgIRPiiDg0dHMCTg4pY50ilA+PsVRpSDxV6PiPgoRR33QDzIAGhEVnLnR/OJZxDjuKQjAAxQaQCbxh3HI2rgiGJxs77XI/Jq3KI7wI1oB2Cw84JOBNZeNYnKSceioVy+/pxSiJu22AQ3s6mJtACfO8e1ZOeldFgqg4q8vuYcTx1px2v7yl7/kB1KFt3ri3b0JleUFTlSoTHbEPfoEZvNiRVk3YAVAFszRLaSFI5sXoHAMbbQ0NZCZO2ADl2Z9FFVhE6dMKp0FZ/G0UHjvg5KgGRQFlUAZKDzAGUuYr/wTaRFZYgTweQB1LauuURo/+kMD0S1z9acThErLU8+9TlKW14kVcyzlYzxKRyFEdCKpI5qC/1tfu62rgF0VVjNhBKcNZ6ZV+hHgKfsPS18NL5YnQNk/Po+D2jyJjZ5a3A/YrK7fZTnRgojXu5flKx/EbUVJyyd6GpX+RuYy0usRGo3TLoq4WGsKGeUIcYLG9e3ItSrTKqVstqfxfdcBmyMVG9wshh1CCD7azgb0BODexoxxAApvVZMh7dzK/0opOTYeHcAO4LdbS1EFiDlVQ3c9KUeja8uTYmgBXRqoGthfS6O0kM2eoimB3A6oe7LYzaxJUATzwrs9KAHYioKaNcAWXXBvWOxWgdisb9+XYC1l6H35kERQkRg7Tr2gPO3Ksbe5lT5UK2sorxnmFtsfYsQvtTLu6vcQUl+F1Y7FbldwrfZdPVpjXf4ojNgteoHLNmuAHel5pQS4cWmly/n0RV7xREwAt9pHnDah1EGDgo+3Qn2arbH6fV/7tBYntygNJ7id1rE/I2yDRDI4bxFjbbRJfdmsdhY0tNe2CvROraO0quXR3df+q1a6ET3riX71hcq1Ku9G62x2r9OHw64CkYPbTusYsIWFRBakg+PoaeRw9XXD2llUfW33SEAUSs2Kct12WseALQ7sgQF80/s4qqs0pAZ2O9vzv32tVL6MKIqnLKCd1jFgi3mKz4pxqhWWhQre1gme3c6i6msHvgRQDw8nK29oxSn/L14/aNCg//8n5x1qkhxSqWV9b4e6rrvpUglwnstnXUVClCLIVJalzO0sv2MWu51B62trCfS3BGpg97eE6/6HiQRqYA8TsdeD9rcEamD3t4Tr/oeJBGpgDxOx14P2twRqYPe3hOv+h4kEamAPE7HXg/a3BGpg97eE6/6HiQRqYA8TsdeD9rcEamD3t4Tr/oeJBP4Pyiy1pipqCFwAAAAASUVORK5CYII="
+                        alt=""></div>
+            </div>
+            <div class="">
+                <h1 class="pt-5 font-bold text-lg">Analytical Skills</h1>
+                <p class="text-xs py-2"><a href="#">Artificial Intelligence</a></p>
+                <p class="text-xs"><a href="#">Big Data</a></p>
+                <p class="text-xs py-2"><a href="#">Business Analysis</a></p>
+                <p class="text-xs"><a href="#">Data Analytics</a></p>
+                <p class="text-xs py-2"><a href="#">Data Science</a></p>
+                <p class="text-xs"><a href="#">Financial Modeling</a></p>
+                <p class="text-xs py-2"><a href="#">Machine Learning</a></p>
+                <p class="text-xs"><a href="#">Microsoft Excel</a></p>
+                <p class="text-xs py-2"><a href="#">Microsoft Power BI</a></p>
+                <p class="text-xs"><a href="#">SQL</a></p>
+                <div class=""><img
+                        src="data:image/png;base64,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"
+                        alt=""></div>
+            </div>
+            <div class="">
+                <h1 class="pt-5 font-bold text-lg">Business Skills</h1>
+                <p class="text-xs py-2"><a href="#">Accounting</a></p>
+                <p class="text-xs"><a href="#">Digital Marketing</a></p>
+                <p class="text-xs py-2"><a href="#">E-commerence</a></p>
+                <p class="text-xs"><a href="#">Finance</a></p>
+                <p class="text-xs py-2"><a href="#">Google</a></p>
+                <p class="text-xs"><a href="#">Graphic Design</a></p>
+                <p class="text-xs py-2"><a href="#">IBM</a></p>
+                <p class="text-xs"><a href="#">Marketing</a></p>
+                <p class="text-xs py-2"><a href="#">Progect Management</a></p>
+                <p class="text-xs"><a href="#">Social Media Marketing</a></p>
+            </div>
+            <div class="">
+                <h1 class="pt-5 font-bold text-lg">Career Resources</h1>
+                <p class="text-xs py-2"><a href="#">Essential IT Certification</a></p>
+                <p class="text-xs"><a href="#">High-Income Skills to Learn</a></p>
+                <p class="text-xs py-2"><a href="#">How to Get a PMP Certification</a></p>
+                <p class="text-xs"><a href="#">How to Learn Artifical Intelligence</a></p>
+                <p class="text-xs py-2"><a href="#">Popular Cybersecurity Certifications</a></p>
+                <p class="text-xs"><a href="#">Popular Data Analytics Certifications</a></p>
+                <p class="text-xs py-2"><a href="#">What Does a Data Analysts Do ?</a></p>
+                <p class="text-xs"><a href="#">Career Educations Articles</a></p>
+                <p class="text-xs py-2"><a href="#">PCareer Development Resources</a></p>
+                <p class="text-xs"><a href="#">Career Aptitude Test</a></p>
+                <div class=""><img src="" alt=""></div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
